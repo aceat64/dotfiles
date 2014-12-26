@@ -24,7 +24,7 @@ install_xapps ()
     sudo apt-get install terminator || exit $?
 
     # download atom
-    wget https://atom.io/download/deb || exit $?
+    wget -O /tmp/atom-amd64.deb https://atom.io/download/deb || exit $?
 
     # install aotm
     sudo dpkg -i /tmp/atom-amd64.deb || exit $?
