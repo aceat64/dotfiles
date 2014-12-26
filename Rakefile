@@ -76,9 +76,6 @@ task :install do
       link_file(source, destination)
   end
 
-  # Install atom packages
-  `apm install file-icons linter linter-jshint linter-phpcs merge-conflicts minimap`
-
   composer_file = File.expand_path("~/.bin/composer.phar")
   unless File.exist?(composer_file)
       info_cmd "Composer doesn't exist, installing"
