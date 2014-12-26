@@ -15,31 +15,4 @@ cd $HOME
 # Clone our dotfiles repo
 git clone git@github.com:aceat64/dotfiles.git .dotfiles || exit $?
 
-# Install the dotfiles
-cd $HOME/.dotfiles && rake install
-
-install_xapps ()
-{
-    # install terminator from repo
-    sudo apt-get install terminator || exit $?
-
-    # download atom
-    wget -O /tmp/atom-amd64.deb https://atom.io/download/deb || exit $?
-
-    # install aotm
-    sudo dpkg -i /tmp/atom-amd64.deb || exit $?
-
-    # install phpcs
-    sudo pear install PHP_CodeSniffer || exit $?
-
-    # Install atom packages
-    apm install file-icons linter linter-jshint linter-phpcs merge-conflicts minimap
-}
-
-while true; do
-    read -p "Do you wish to install terminator and atom? (y/N)" yn
-    case $yn in
-        [Yy]* ) install_xapps; break;;
-        * ) break;;
-    esac
-done
+echo -e "Prep complete, please run the following commands:\ncd $HOME/.dotfiles\nrake install"
