@@ -15,4 +15,4 @@ cd $HOME
 # Clone our dotfiles repo
 git clone git@github.com:aceat64/dotfiles.git .dotfiles || exit $?
 
-echo -e "Prep complete, please run the following commands:\ncd $HOME/.dotfiles\nrake install"
+echo "Prep complete, please run the following commands:\ncd $HOME/.dotfiles\nrake install"
