@@ -33,8 +33,10 @@ then
     exit 1;
 fi
 
+cd $HOME
+
 # Clone our dotfiles repo
-git clone WHATERVER .dotfiles || exit $?
+git clone git@github.com:aceat64/dotfiles.git .dotfiles || exit $?
 
 # Install the dotfiles
 cd $HOME/.dotfiles && rake install
