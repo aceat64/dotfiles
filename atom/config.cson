@@ -1,0 +1,11 @@
+'global':
+  'editor':
+    'tabLength': 4
+    'showIndentGuide': true
+  'core':
+    'projectHome': '/home/aceat64/src'
+  'exception-reporting':
+    'userId': '73f94170-fbc6-6244-5df7-36fd1b10c065'
+  'welcome':
+    'showOnStartup': false
+  'linter': {}

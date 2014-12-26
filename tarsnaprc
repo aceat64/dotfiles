@@ -1,0 +1,2 @@
+cachedir /usr/local/tarsnap-cache
+keyfile /root/tarsnap.key
