@@ -87,6 +87,7 @@ alias lsize='ls -laShrF'
 alias nano='nano -w'
 alias df='df -h'
 alias composer="php $HOME/.bin/composer.phar"
+alias ik="/media/$USER/IronKey/linux/ironkey"
 
 ### SSH Aliases ###
 alias claptrap='ssh andrew@claptrap.beyondweb.net'
