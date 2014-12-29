@@ -1,5 +1,7 @@
 [user]
 	name = Andrew LeCody
-	email = andrew@beyondweb.net
+	email = <.replace email>
 [push]
 	default = simple
+[core]
+	excludesfile = ~/.gitignore
